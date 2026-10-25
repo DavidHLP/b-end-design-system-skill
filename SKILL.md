@@ -7,11 +7,11 @@ tags: [design-system, ui-ux, b-end, components, rules, archetypes]
 
 # B端设计系统与组件规范 AI 执行引擎 (Ludi Design System Skill)
 
-本 Skill 是面向 AI 编程助手（Agent、Claude Code、Cursor、Windsurf、Codex 等）的**可执行设计系统指令层**。它彻底终结“AI 拼装页面毫无设计感、组件乱堆、弹窗抽屉滥用、色彩失控”的行业通病，将资深设计师的决策直觉转化为确定性的工程生成约束。
+本 Skill 是面向 AI 编程助手（Agent、Claude Code、Cursor、Windsurf、Codex 等）的可执行设计系统指令层。它彻底终结“AI 拼装页面毫无设计感、组件乱堆、弹窗抽屉滥用、色彩失控”的行业通病，将资深设计师的决策直觉转化为确定性的工程生成约束。
 
 ---
 
-## 🎯 核心执行工作流 (Standard Workflow)
+## 核心执行工作流 (Standard Workflow)
 
 每当接收到任何 B 端界面生成、修改或审查需求时，按以下六步顺序执行：
 
@@ -20,7 +20,7 @@ tags: [design-system, ui-ux, b-end, components, rules, archetypes]
         │
 [步骤 2: 模板匹配] ──► 从六大页面骨架中唯一确定页面形态 (references/05)
         │
-[步骤 3: 布局骨架] ──► 搭建 PageHeader ➔ FilterPanel ➔ DataSection ➔ BulkActionBar
+[步骤 3: 布局骨架] ──► 搭建 PageHeader -> FilterPanel -> DataSection -> BulkActionBar
         │
 [步骤 4: 选型判据] ──► 执行 7 大否定判据，确定 Modal vs Drawer vs Page (references/03 & 06)
         │
@@ -31,7 +31,7 @@ tags: [design-system, ui-ux, b-end, components, rules, archetypes]
 
 ---
 
-## 🛑 必须遵守的三大底层硬红线 (Non-Negotiable Redlines)
+## 必须遵守的三大底层硬红线 (Non-Negotiable Redlines)
 
 1. **绝对禁止粗黑边框与机器居中**：
    - 分割线与卡片边框优先采用 **0.5px 精细微边框**（如 `border: 1px solid rgba(226, 232, 240, 0.7)`）。
@@ -50,28 +50,28 @@ tags: [design-system, ui-ux, b-end, components, rules, archetypes]
 
 ---
 
-## 📚 深度参考规范库导航 (References Index)
+## 深度参考规范库导航 (References Index)
 
 遇到具体设计决策时，精准查阅 `references/` 目录下的专门手册：
 
-- 🎨 **基石与视觉法则**：[01-design-tokens-and-foundations.md](./references/01-design-tokens-and-foundations.md)
+- **基石与视觉法则**：[01-design-tokens-and-foundations.md](./references/01-design-tokens-and-foundations.md)
   - 色彩语义四层分级、0.5px 微边框配方、同心圆角几何计算、阴影防 overflow 裁切公式。
-- 🧱 **基础原子组件**：[02-primitive-components.md](./references/02-primitive-components.md)
+- **基础原子组件**：[02-primitive-components.md](./references/02-primitive-components.md)
   - Button 五层视觉阶梯、主操作判定五步法、Badge 业务映射表、Radio/Switch/Select 否定判据。
-- 🪟 **浮层与反馈系统**：[03-overlays-dialog-drawer.md](./references/03-overlays-dialog-drawer.md)
+- **浮层与反馈系统**：[03-overlays-dialog-drawer.md](./references/03-overlays-dialog-drawer.md)
   - 模态与阻断解耦、Modal vs Drawer 选型决策树、三档推荐尺寸与三分屏高度、从列表进入详情四大判据。
-- 🧩 **复合组件与数据结构**：[04-composite-components.md](./references/04-composite-components.md)
+- **复合组件与数据结构**：[04-composite-components.md](./references/04-composite-components.md)
   - DataGrid 表格列三向对齐、FilterPanel 三态、DescriptionGrid 四层区隔、BulkActionBar、五态覆盖法。
-- 📐 **六大页面模板骨架**：[05-page-templates-and-archetypes.md](./references/05-page-templates-and-archetypes.md)
+- **六大页面模板骨架**：[05-page-templates-and-archetypes.md](./references/05-page-templates-and-archetypes.md)
   - 列表页 5 种形态、表单页 4 级复杂度、详情页 3 种模式、看板 KPI 约束、设置页即时保存判据。
-- ⚠️ **组件选型 7 大否定判据与反模式**：[06-component-priority-and-anti-patterns.md](./references/06-component-priority-and-anti-patterns.md)
+- **组件选型 7 大否定判据与反模式**：[06-component-priority-and-anti-patterns.md](./references/06-component-priority-and-anti-patterns.md)
   - 量级/频次/时长/重要性/语义/结构错配的退出机制、40+ 条高频避坑红线。
-- ✅ **交付前自查硬清单**：[07-design-system-audit-checklist.md](./references/07-design-system-audit-checklist.md)
+- **交付前自查硬清单**：[07-design-system-audit-checklist.md](./references/07-design-system-audit-checklist.md)
   - 15 项视觉与交互门禁走查表。
 
 ---
 
-## 💻 开箱即用实战模板 (Templates)
+## 开箱即用实战模板 (Templates)
 
 生成真实代码时，可直接参考或复制 `templates/` 目录中的标准工程代码：
 - `templates/list-page-template.tsx`：标准查询表格 + 批量浮条 + 抽屉轻编辑 + 确认删除弹窗。
@@ -81,7 +81,7 @@ tags: [design-system, ui-ux, b-end, components, rules, archetypes]
 
 ---
 
-## 🛠️ 自动化校验脚本 (Lint Script)
+## 自动化校验脚本 (Lint Script)
 
 代码生成完成后，可随时执行 Python 走查脚本自检：
 ```bash
