@@ -21,7 +21,7 @@
 
 **根本原因：AI 从来不缺写代码的能力，它缺少的是成体系的「设计决策约束」与「组件选型否定判据」！**
 
-这个 Skill 由 **UI/UX 设计师 & 科技博主 Ludi** 精心沉淀，将十余年 B 端企业级设计系统与交互法则，转化为 Agent、Claude Code、Cursor、Windsurf、Codex 可以直接理解并 100% 严格执行的 **“AI 可执行设计规则层”**。
+本 Skill 将十余年 B 端企业级设计系统与交互法则，转化为 Agent、Claude Code、Cursor、Windsurf、Codex 可以直接理解并 100% 严格执行的 **“AI 可执行设计规则层”**。
 
 ---
 
