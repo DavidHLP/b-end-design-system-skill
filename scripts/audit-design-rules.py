@@ -90,25 +90,25 @@ def main():
             files_to_check.extend(target_path.rglob(ext))
 
     total_violations = 0
-    print(f"🔍 [Ludi Design Linter] 正在走查设计系统规则: {target_path}")
-    print(f"📁 发现目标待测代码文件: {len(files_to_check)} 个\n")
+    print(f"[Ludi Design Linter] 正在走查设计系统规则: {target_path}")
+    print(f"发现目标待测代码文件: {len(files_to_check)} 个\n")
 
     for f in files_to_check:
         results = audit_file(f)
         if results:
-            print(f"📄 {f.relative_to(target_path) if target_path.is_dir() else f.name}")
+            print(f"文件: {f.relative_to(target_path) if target_path.is_dir() else f.name}")
             for r in results:
                 total_violations += 1
-                color_tag = "🔴 [ERROR]" if r["severity"] == "ERROR" else "🟡 [WARN]"
+                color_tag = "[ERROR]" if r["severity"] == "ERROR" else "[WARN]"
                 print(f"  Line {r['line']} {color_tag} ({r['id']} {r['rule']}): {r['message']}")
                 print(f"    代码片段: `{r['code_snippet']}`")
             print()
 
     if total_violations == 0:
-        print("✅ 恭喜！未检测到设计系统规范违规项，代码设计层级与交互门禁均合规！")
+        print("恭喜！未检测到设计系统规范违规项，代码设计层级与交互门禁均合规！")
         sys.exit(0)
     else:
-        print(f"⚠️ 走查完成，共发现 {total_violations} 处需优化的设计或交互项。")
+        print(f"走查完成，共发现 {total_violations} 处需优化的设计或交互项。")
         sys.exit(1)
 
 if __name__ == "__main__":
