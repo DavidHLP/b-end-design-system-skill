@@ -83,6 +83,8 @@ b-end-design-system-skill/
     └── audit-design-rules.py         # Python 自动化设计系统规则检查脚本
 ```
 
+TSX 模板需要已有 React + TypeScript 应用，并安装 `lucide-react`、配置 Tailwind CSS；它们是参考组件，不是独立应用，详见[模板使用前提](templates/README.md)。可选审计脚本需要 Python 3，无需 pip 依赖；请按 [SKILL.md](SKILL.md#自动化校验脚本-lint-script) 使用安装位置的绝对路径执行。
+
 ---
 
 ## 如何在你的 AI 工具中使用？
@@ -91,11 +93,9 @@ b-end-design-system-skill/
 直接将本仓库的 [`.cursorrules`](.cursorrules) 复制到你的项目根目录下，或者在 `.cursor/rules/` 目录下添加指向 `SKILL.md` 的引用即可。
 
 ### 方式 2：Claude Code / Antigravity (AGY) / Codex 用户
-在你的工作区运行：
-```bash
-# 将本 Skill 链接或放置到你的提示词 / Skill 检索路径下
-# 在与 AI 对话时直接输入：
-"请严格遵循 b-end-design-system 规范，为我生成一个客户合同管理列表页。"
+先完成对应平台的文件安装，再将以下提示词输入 AI 对话框；它不是 Shell 安装命令：
+```text
+请严格遵循 b-end-design-system 规范，为我生成一个客户合同管理列表页。
 ```
 
 ### 方式 3：直接复制提示词给任意大模型 (通用 Prompt)

@@ -82,6 +82,10 @@ def main():
     target = sys.argv[1] if len(sys.argv) > 1 else "."
     target_path = Path(target).resolve()
 
+    if not target_path.exists():
+        print(f"目标不存在： {target_path}", file=sys.stderr)
+        sys.exit(2)
+
     files_to_check = []
     if target_path.is_file():
         files_to_check.append(target_path)
@@ -93,6 +97,10 @@ def main():
     print(f"[Ludi Design Linter] 正在走查设计系统规则: {target_path}")
     print(f"发现目标待测代码文件: {len(files_to_check)} 个\n")
 
+    if not files_to_check:
+        print("未找到受支持的源码文件（.tsx、.jsx、.vue、.html）。", file=sys.stderr)
+        sys.exit(2)
+
     for f in files_to_check:
         results = audit_file(f)
         if results:
@@ -101,7 +109,8 @@ def main():
                 total_violations += 1
                 color_tag = "[ERROR]" if r["severity"] == "ERROR" else "[WARN]"
                 print(f"  Line {r['line']} {color_tag} ({r['id']} {r['rule']}): {r['message']}")
-                print(f"    代码片段: `{r['code_snippet']}`")
+                if "code_snippet" in r:
+                    print(f"    代码片段: `{r['code_snippet']}`")
             print()
 
     if total_violations == 0:
