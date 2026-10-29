@@ -91,16 +91,12 @@ b-end-design-system-skill/
 直接将本仓库的 [`.cursorrules`](.cursorrules) 复制到你的项目根目录下，或者在 `.cursor/rules/` 目录下添加指向 `SKILL.md` 的引用即可。
 
 ### 方式 2：Claude Code / Antigravity (AGY) / Codex 用户
-在你的工作区运行：
-```bash
-# 将本 Skill 链接或放置到你的提示词 / Skill 检索路径下
-# 在与 AI 对话时直接输入：
-"请严格遵循 b-end-design-system 规范，为我生成一个客户合同管理列表页。"
+
+请在[中文安装指南目录](docs/)中选择对应客户端的指南，先部署完整资源包，再将以下提示词输入客户端对话框；它不是 Shell 安装命令：
+
+```text
+请严格遵循 b-end-design-system 规范，为我生成一个客户合同管理列表页。
 ```
-
-### Claude Code 安装
-
-Claude Code 用户请先按[完整安装指南](docs/install-claude-code.md)部署，再使用上方提示词。指南包含项目级与个人级目录、完整资源复制、`/b-end-design-system` 调用和已安装脚本的路径。
 
 ### 方式 3：直接复制提示词给任意大模型 (通用 Prompt)
 在任意 AI 工具（ChatGPT、Claude、DeepSeek、Kimi 等）中直接粘贴以下引导词：
