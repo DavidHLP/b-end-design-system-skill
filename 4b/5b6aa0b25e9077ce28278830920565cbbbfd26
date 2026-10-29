@@ -1,0 +1,23 @@
+docs/install-cursor.md
+  s_168f1df3a6d304::t_4e7ea10686df54 1-72
+integrations/cursor/b-end-design-system.mdc
+  s_168f1df3a6d304::t_4e7ea10686df54 1-11
+README.md
+  s_168f1df3a6d304::t_a322393d73a526 90-92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4b5b6aa0b25e9077ce28278830920565cbbbfd26",
+  "prompts": {},
+  "sessions": {
+    "s_168f1df3a6d304": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a188a6-d879-7161-b25d-42122e7aa707",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "DavidHLP <lysf15520112973@163.com>"
+    }
+  }
+}
