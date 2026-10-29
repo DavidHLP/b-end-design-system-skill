@@ -1,0 +1,21 @@
+README.md
+  s_168f1df3a6d304::t_d34a5e1f630485 101-104
+docs/install-antigravity.md
+  s_168f1df3a6d304::t_11c0dc9ad4ff30 1-105
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4c25c2a73858cfd1e8bd2671a96383bbf7ce9a0a",
+  "prompts": {},
+  "sessions": {
+    "s_168f1df3a6d304": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a188a6-d879-7161-b25d-42122e7aa707",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "DavidHLP <lysf15520112973@163.com>"
+    }
+  }
+}
