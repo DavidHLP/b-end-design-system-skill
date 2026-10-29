@@ -1,0 +1,19 @@
+README.md
+  s_168f1df3a6d304::t_84a696837239f6 95,97-99
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6bd9e73b43fd90cb3ac33f6a7b3c8650d126609c",
+  "prompts": {},
+  "sessions": {
+    "s_168f1df3a6d304": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a188a6-d879-7161-b25d-42122e7aa707",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "DavidHLP <lysf15520112973@163.com>"
+    }
+  }
+}
