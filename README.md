@@ -90,6 +90,10 @@ b-end-design-system-skill/
 ### 方式 1：Cursor 用户 (推荐)
 直接将本仓库的 [`.cursorrules`](.cursorrules) 复制到你的项目根目录下，或者在 `.cursor/rules/` 目录下添加指向 `SKILL.md` 的引用即可。
 
+### Windsurf / Cascade 安装
+
+请按 [Windsurf 安装指南](docs/install-windsurf.md)安装完整资源包，保留已有规则。指南区分 Windsurf 与后续客户端的工作区路径，并说明如何发现 Skill、调用与执行已安装脚本。
+
 ### 方式 2：Claude Code / Antigravity (AGY) / Codex 用户
 在你的工作区运行：
 ```bash
