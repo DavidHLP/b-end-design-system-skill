@@ -1,0 +1,29 @@
+SKILL.md
+  s_168f1df3a6d304::t_ceac4d194c35a3 77-79,89-90,92,94-95
+scripts/test_audit_design_rules.py
+  s_168f1df3a6d304::t_e50bc2eac05cd1 1-59
+scripts/audit-design-rules.py
+  s_168f1df3a6d304::t_ceac4d194c35a3 85-88,100-103,112-113
+templates/README.md
+  s_168f1df3a6d304::t_ceac4d194c35a3 2,4,6,10,12-16,18,20
+  s_168f1df3a6d304::t_f57d8aaaac478b 1,3,5,7-9,11,17,19,21
+README.md
+  s_168f1df3a6d304::t_3742400359b3e7 86,96-98
+  s_168f1df3a6d304::t_ceac4d194c35a3 87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a36f4edb501bd2c4aaf8d640c2385cf3588d63db",
+  "prompts": {},
+  "sessions": {
+    "s_168f1df3a6d304": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a188a6-d879-7161-b25d-42122e7aa707",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "DavidHLP <lysf15520112973@163.com>"
+    }
+  }
+}
