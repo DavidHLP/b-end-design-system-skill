@@ -92,4 +92,6 @@ tags: [design-system, ui-ux, b-end, components, rules, archetypes]
 python3 "/absolute/path/to/b-end-design-system/scripts/audit-design-rules.py" "/absolute/path/to/your/project"
 ```
 
-退出码：`0` 表示已检查源码且未检测到违规，`1` 表示检测到违规或文件读取失败，`2` 表示目标不存在，或目录中没有受支持的源码文件。此正则检查仅覆盖已实现的规则，通过检查不能替代完整设计走查。
+支持 `.tsx`、`.jsx`、`.vue`、`.html` 文件。递归扫描目录时不进入符号链接目录；请按需单独指定其实际目录。
+
+退出码：`0` 表示已检查源码且未检测到违规，`1` 表示检测到违规或文件/目录读取失败，`2` 表示目标不存在、文件类型不受支持，或目录中没有受支持的源码文件。此正则检查仅覆盖已实现的规则，通过检查不能替代完整设计走查。
