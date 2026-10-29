@@ -70,3 +70,5 @@ Cursor 可按任务相关性选用 Skill，也支持手动调用。如需持续�
 源码目录名称不同时，请替换 `src`，并确认输出中的待测文件数量符合预期。该脚本基于启发式检查，不能替代人工检查清单，也不能证明 Cursor 已加载 Skill。用户级安装对应的脚本路径为 `"$HOME/.cursor/skills/b-end-design-system/scripts/audit-design-rules.py"`。
 
 阅读 Skill 不需要安装前端依赖。只有将 TSX 模板用于应用时，才需要应用已配置 React、`lucide-react` 和 Tailwind CSS，并按现有项目调整模板。
+
+本指南的文件复制与脚本命令已在临时目录验证；尚未实测 Cursor 客户端界面的加载与调用，请按上方步骤人工验收。
