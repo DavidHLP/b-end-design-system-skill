@@ -1,0 +1,21 @@
+README.md
+  s_168f1df3a6d304::t_7a10ab2e3cc924 93-96
+docs/install-windsurf.md
+  s_168f1df3a6d304::t_126be6b9b0830d 1-102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "85554b72976bdfb64005e2a3424d62a8ba67b95d",
+  "prompts": {},
+  "sessions": {
+    "s_168f1df3a6d304": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a188a6-d879-7161-b25d-42122e7aa707",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "DavidHLP <lysf15520112973@163.com>"
+    }
+  }
+}
