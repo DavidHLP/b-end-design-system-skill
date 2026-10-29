@@ -98,6 +98,10 @@ b-end-design-system-skill/
 "请严格遵循 b-end-design-system 规范，为我生成一个客户合同管理列表页。"
 ```
 
+### Antigravity 安装
+
+Antigravity 用户请先按[完整安装指南](docs/install-antigravity.md)部署，再使用上方提示词。指南包含工作区资源包、App/CLI/IDE 各自的全局目录、发现与调用，以及已安装脚本的路径。
+
 ### 方式 3：直接复制提示词给任意大模型 (通用 Prompt)
 在任意 AI 工具（ChatGPT、Claude、DeepSeek、Kimi 等）中直接粘贴以下引导词：
 
